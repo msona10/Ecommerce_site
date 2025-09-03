@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Shoes Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nike Shoes Store</h1>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3c5c1d42-1581-4d84-84f8-6e292743ffb2/air-force-1-07-shoes.png" alt="Nike Air Force 1">
+      <h2>Nike Air Force 1</h2>
+      <p>$100</p>
+      <button onclick="addToCart('Nike Air Force 1',100)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ba1cfd7e-fb3e-4e8f-9101-0b4cf4f63295/air-max-90-shoes.png" alt="Nike Air Max 90">
+      <h2>Nike Air Max 90</h2>
+      <p>$120</p>
+      <button onclick="addToCart('Nike Air Max 90',120)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3 id="total">Total: $0</h3>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
